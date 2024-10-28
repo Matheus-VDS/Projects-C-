@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\bin\Debug\net8.0\10-ValidacaoDados.exe
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\bin\Debug\net8.0\10-ValidacaoDados.deps.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\bin\Debug\net8.0\10-ValidacaoDados.runtimeconfig.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\bin\Debug\net8.0\10-ValidacaoDados.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\bin\Debug\net8.0\10-ValidacaoDados.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\obj\Debug\net8.0\10-ValidacaoDados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\obj\Debug\net8.0\10-ValidacaoDados.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\obj\Debug\net8.0\10-ValidacaoDados.AssemblyInfo.cs
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\obj\Debug\net8.0\10-ValidacaoDados.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\obj\Debug\net8.0\10-ValidacaoDados.sourcelink.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\obj\Debug\net8.0\10-ValidacaoDados.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\obj\Debug\net8.0\refint\10-ValidacaoDados.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\obj\Debug\net8.0\10-ValidacaoDados.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\obj\Debug\net8.0\10-ValidacaoDados.genruntimeconfig.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\10-ValidacaoDados\obj\Debug\net8.0\ref\10-ValidacaoDados.dll

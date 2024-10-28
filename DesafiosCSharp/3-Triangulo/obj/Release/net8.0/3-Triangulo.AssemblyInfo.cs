@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("3-Triangulo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+617e9e15be278a977c6c65b00645c83690ef8e06")]
 [assembly: System.Reflection.AssemblyProductAttribute("3-Triangulo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("3-Triangulo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

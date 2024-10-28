@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\bin\Debug\net8.0\5-Intervalo.exe
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\bin\Debug\net8.0\5-Intervalo.deps.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\bin\Debug\net8.0\5-Intervalo.runtimeconfig.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\bin\Debug\net8.0\5-Intervalo.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\bin\Debug\net8.0\5-Intervalo.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\obj\Debug\net8.0\5-Intervalo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\obj\Debug\net8.0\5-Intervalo.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\obj\Debug\net8.0\5-Intervalo.AssemblyInfo.cs
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\obj\Debug\net8.0\5-Intervalo.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\obj\Debug\net8.0\5-Intervalo.sourcelink.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\obj\Debug\net8.0\5-Intervalo.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\obj\Debug\net8.0\refint\5-Intervalo.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\obj\Debug\net8.0\5-Intervalo.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\obj\Debug\net8.0\5-Intervalo.genruntimeconfig.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\5-Intervalo\obj\Debug\net8.0\ref\5-Intervalo.dll

@@ -3,25 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-Piramide", "1-ProjetoPiramide\1-Piramide.csproj", "{A8B63186-C628-4E3F-8F05-8BEF06DBB4CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-Piramide", "1-ProjetoPiramide\1-Piramide.csproj", "{A8B63186-C628-4E3F-8F05-8BEF06DBB4CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-Vertice", "2-Vertice\2-Vertice.csproj", "{150E6CB0-56E4-459C-98D8-DFC13533B281}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2-Vertice", "2-Vertice\2-Vertice.csproj", "{150E6CB0-56E4-459C-98D8-DFC13533B281}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-Triangulo", "3-Triangulo\3-Triangulo.csproj", "{8B6785DE-CF25-4FD2-AB68-407AA33D29E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3-Triangulo", "3-Triangulo\3-Triangulo.csproj", "{8B6785DE-CF25-4FD2-AB68-407AA33D29E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-Poligono", "4-Poligono\4-Poligono.csproj", "{7F8C58A1-EB6F-46CC-9218-363F6835D39D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4-Poligono", "4-Poligono\4-Poligono.csproj", "{7F8C58A1-EB6F-46CC-9218-363F6835D39D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-Intervalo", "5-Intervalo\5-Intervalo.csproj", "{B5510D70-9382-45EE-BC40-64C43C0DA5FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5-Intervalo", "5-Intervalo\5-Intervalo.csproj", "{B5510D70-9382-45EE-BC40-64C43C0DA5FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-ListaIntervalo", "6-ListaIntervalo\6-ListaIntervalo.csproj", "{307D1A72-58A3-48E8-9816-DB6D239736EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6-ListaIntervalo", "6-ListaIntervalo\6-ListaIntervalo.csproj", "{307D1A72-58A3-48E8-9816-DB6D239736EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-Armstrong", "7-Armstrong\7-Armstrong.csproj", "{E2208B48-177C-450E-A00D-C41865A174E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7-Armstrong", "7-Armstrong\7-Armstrong.csproj", "{E2208B48-177C-450E-A00D-C41865A174E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-CertidaoNascimento", "8-CertidaoNascimento\8-CertidaoNascimento.csproj", "{FA0C911C-F162-42D8-BF6F-8C15B470ECB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8-CertidaoNascimento", "8-CertidaoNascimento\8-CertidaoNascimento.csproj", "{FA0C911C-F162-42D8-BF6F-8C15B470ECB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9-Carro", "9-Carro\9-Carro.csproj", "{3C3F22E8-58E8-40FC-8824-F4B1891B857D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "9-Carro", "9-Carro\9-Carro.csproj", "{3C3F22E8-58E8-40FC-8824-F4B1891B857D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-ValidacaoDados", "10-ValidacaoDados\10-ValidacaoDados.csproj", "{29190BBB-71EF-4ECE-A544-48A94E89FF50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10-ValidacaoDados", "10-ValidacaoDados\10-ValidacaoDados.csproj", "{29190BBB-71EF-4ECE-A544-48A94E89FF50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{030ED817-B806-4BAB-B96E-A2752955FC34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{3EEEF2A3-513B-4B52-9576-B87DD1F22C34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,10 @@ Global
 		{29190BBB-71EF-4ECE-A544-48A94E89FF50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29190BBB-71EF-4ECE-A544-48A94E89FF50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29190BBB-71EF-4ECE-A544-48A94E89FF50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EEEF2A3-513B-4B52-9576-B87DD1F22C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEEF2A3-513B-4B52-9576-B87DD1F22C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEEF2A3-513B-4B52-9576-B87DD1F22C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEEF2A3-513B-4B52-9576-B87DD1F22C34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

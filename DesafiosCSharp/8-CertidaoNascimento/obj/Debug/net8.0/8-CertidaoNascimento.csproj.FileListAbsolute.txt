@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\bin\Debug\net8.0\8-CertidaoNascimento.exe
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\bin\Debug\net8.0\8-CertidaoNascimento.deps.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\bin\Debug\net8.0\8-CertidaoNascimento.runtimeconfig.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\bin\Debug\net8.0\8-CertidaoNascimento.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\bin\Debug\net8.0\8-CertidaoNascimento.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\obj\Debug\net8.0\8-CertidaoNascimento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\obj\Debug\net8.0\8-CertidaoNascimento.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\obj\Debug\net8.0\8-CertidaoNascimento.AssemblyInfo.cs
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\obj\Debug\net8.0\8-CertidaoNascimento.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\obj\Debug\net8.0\8-CertidaoNascimento.sourcelink.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\obj\Debug\net8.0\8-CertidaoNascimento.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\obj\Debug\net8.0\refint\8-CertidaoNascimento.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\obj\Debug\net8.0\8-CertidaoNascimento.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\obj\Debug\net8.0\8-CertidaoNascimento.genruntimeconfig.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\8-CertidaoNascimento\obj\Debug\net8.0\ref\8-CertidaoNascimento.dll

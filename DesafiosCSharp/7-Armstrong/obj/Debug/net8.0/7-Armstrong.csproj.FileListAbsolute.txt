@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\bin\Debug\net8.0\7-Armstrong.exe
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\bin\Debug\net8.0\7-Armstrong.deps.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\bin\Debug\net8.0\7-Armstrong.runtimeconfig.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\bin\Debug\net8.0\7-Armstrong.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\bin\Debug\net8.0\7-Armstrong.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\obj\Debug\net8.0\7-Armstrong.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\obj\Debug\net8.0\7-Armstrong.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\obj\Debug\net8.0\7-Armstrong.AssemblyInfo.cs
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\obj\Debug\net8.0\7-Armstrong.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\obj\Debug\net8.0\7-Armstrong.sourcelink.json
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\obj\Debug\net8.0\7-Armstrong.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\obj\Debug\net8.0\refint\7-Armstrong.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\obj\Debug\net8.0\7-Armstrong.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\obj\Debug\net8.0\7-Armstrong.genruntimeconfig.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\7-Armstrong\obj\Debug\net8.0\ref\7-Armstrong.dll
