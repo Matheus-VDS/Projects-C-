@@ -1,0 +1,14 @@
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\bin\Debug\net8.0\2-Vertice.exe
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\bin\Debug\net8.0\2-Vertice.deps.json
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\bin\Debug\net8.0\2-Vertice.runtimeconfig.json
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\bin\Debug\net8.0\2-Vertice.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\bin\Debug\net8.0\2-Vertice.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\obj\Debug\net8.0\2-Vertice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\obj\Debug\net8.0\2-Vertice.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\obj\Debug\net8.0\2-Vertice.AssemblyInfo.cs
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\obj\Debug\net8.0\2-Vertice.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\obj\Debug\net8.0\2-Vertice.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\obj\Debug\net8.0\refint\2-Vertice.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\obj\Debug\net8.0\2-Vertice.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\obj\Debug\net8.0\2-Vertice.genruntimeconfig.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\2-Vertice\obj\Debug\net8.0\ref\2-Vertice.dll

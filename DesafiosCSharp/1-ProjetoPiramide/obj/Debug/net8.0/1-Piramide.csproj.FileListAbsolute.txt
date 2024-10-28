@@ -1,0 +1,14 @@
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\bin\Debug\net8.0\1-Piramide.exe
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\bin\Debug\net8.0\1-Piramide.deps.json
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\bin\Debug\net8.0\1-Piramide.runtimeconfig.json
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\bin\Debug\net8.0\1-Piramide.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\bin\Debug\net8.0\1-Piramide.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\obj\Debug\net8.0\1-Piramide.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\obj\Debug\net8.0\1-Piramide.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\obj\Debug\net8.0\1-Piramide.AssemblyInfo.cs
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\obj\Debug\net8.0\1-Piramide.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\obj\Debug\net8.0\1-Piramide.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\obj\Debug\net8.0\refint\1-Piramide.dll
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\obj\Debug\net8.0\1-Piramide.pdb
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\obj\Debug\net8.0\1-Piramide.genruntimeconfig.cache
+C:\Users\PC\Desktop\projetos\Residência .NET\DesafiosCSharp\1-ProjetoPiramide\obj\Debug\net8.0\ref\1-Piramide.dll
