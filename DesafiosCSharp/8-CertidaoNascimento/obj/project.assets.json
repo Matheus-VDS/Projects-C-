@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\8-CertidaoNascimento\\8-CertidaoNascimento.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\8-CertidaoNascimento\\8-CertidaoNascimento.csproj",
       "projectName": "8-CertidaoNascimento",
-      "projectPath": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\8-CertidaoNascimento\\8-CertidaoNascimento.csproj",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\8-CertidaoNascimento\\8-CertidaoNascimento.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\8-CertidaoNascimento\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\8-CertidaoNascimento\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

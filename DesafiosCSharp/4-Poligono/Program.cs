@@ -20,25 +20,25 @@ namespace Classes
 
         public int QuantidadeDeVertices => vertices.Count;
 
-        public bool AddVertice(Vertice novoVertice)
+        public bool AddVertice(Vertice v)
         {
             foreach (var vertice in vertices)
             {
-                if (vertice.is_Equal(novoVertice))
+                if (vertice.is_Equal(v))
                 {
-                    return false; // Vértice já existe
+                    return false; 
                 }
             }
-            vertices.Add(novoVertice);
+            vertices.Add(v);
             return true;
         }
 
-        public void RemoveVertice(Vertice verticeARemover)
+        public void RemoveVertice(Vertice v)
         {
             if (vertices.Count <= 3)
                 throw new InvalidOperationException("Um polígono deve ter pelo menos 3 vértices.");
             else
-                vertices.Remove(verticeARemover);
+                vertices.Remove(v);
         }
         
 
@@ -48,7 +48,7 @@ namespace Classes
             for (int i = 0; i < vertices.Count; i++)
             {
                 Vertice verticeAtual = vertices[i];
-                Vertice proximoVertice = vertices[(i + 1) % vertices.Count]; // Conecta o último ao primeiro
+                Vertice proximoVertice = vertices[(i + 1) % vertices.Count];
                 perimetro += verticeAtual.Distancia(proximoVertice);
             }
             return perimetro;
@@ -69,8 +69,7 @@ class Program
             return;
         }
 
-        // Coletando as coordenadas dos vértices
-        for (int i = 1; i <= numeroVertices; i++)
+        for (int i = 0; i < numeroVertices; i++)
         {
             Console.Write($"Informe valor de x para o vértice {i}: ");
             double x = Convert.ToDouble(Console.ReadLine());
@@ -84,9 +83,8 @@ class Program
 
         Console.WriteLine($"\nO polígono possui {poligono.QuantidadeDeVertices} vértices.");
 
-        // Adicionando um novo vértice e verificando se foi adicionado com sucesso
         Console.WriteLine("\nTentando adicionar um novo vértice ao polígono:");
-        Vertice novoVertice = new Vertice(10, 10); // exemplo de novo vértice
+        Vertice novoVertice = new Vertice(10, 10);
         if (poligono.AddVertice(novoVertice))
         {
             Console.WriteLine("Vértice adicionado com sucesso.");
@@ -96,13 +94,10 @@ class Program
             Console.WriteLine("O vértice já existe no polígono.");
         }
 
-        // Exibindo o perímetro do polígono
         Console.WriteLine($"\nPerímetro do polígono: {poligono.Perimetro()}");
 
-        // Tentando remover um vértice
-        //Console.WriteLine("\nRemovendo um vértice:");
-        poligono.RemoveVertice(vertices[0]); // Removendo o primeiro vértice
-        Console.WriteLine("Vértice removido com sucesso.");
+        Console.WriteLine("Informe um vértice para ser removido: ");
+        poligono.RemoveVertice(vertices[0]);
         Console.WriteLine($"O polígono agora possui {poligono.QuantidadeDeVertices} vértices.");
     }
 }

@@ -13,3 +13,18 @@ C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\9-C
 C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\9-Carro.pdb
 C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\9-Carro.genruntimeconfig.cache
 C:\Users\PC\Desktop\projetos\Residência .NET\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\ref\9-Carro.dll
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\bin\Debug\net8.0\9-Carro.exe
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\bin\Debug\net8.0\9-Carro.deps.json
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\bin\Debug\net8.0\9-Carro.runtimeconfig.json
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\bin\Debug\net8.0\9-Carro.dll
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\bin\Debug\net8.0\9-Carro.pdb
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\9-Carro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\9-Carro.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\9-Carro.AssemblyInfo.cs
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\9-Carro.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\9-Carro.sourcelink.json
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\9-Carro.dll
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\refint\9-Carro.dll
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\9-Carro.pdb
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\9-Carro.genruntimeconfig.cache
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\9-Carro\obj\Debug\net8.0\ref\9-Carro.dll

@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Autor: Matheus Vieira de Souza
+
+using System;
+using System.Collections.Generic;
 
 public class Motor
 {
@@ -6,91 +9,95 @@ public class Motor
 
     public Motor(double cilindrada)
     {
-        if (cilindrada <= 0)               
+        if (cilindrada <= 0)
             throw new ArgumentException("A cilindrada deve ser maior que zero.");
         Cilindrada = cilindrada;
     }
 }
 
-    public class Carro
+public class Carro
+{
+    public string Placa { get; }
+    public string Modelo { get; }
+    public Motor Motor { get; private set; }
+    private static List<Motor> motoresInstalados = new List<Motor>();
+
+    public Carro(string placa, string modelo, Motor motor)
     {
-        public string Placa { get; }
-        public string Modelo { get; }
-        public Motor Motor { get; private set; }
+        if (string.IsNullOrEmpty(placa))
+            throw new ArgumentException("A placa é obrigatória.");
+        if (string.IsNullOrEmpty(modelo))
+            throw new ArgumentException("O modelo é obrigatório.");
+        if (motor == null)
+            throw new ArgumentNullException(nameof(motor), "O carro deve ter um motor.");
 
-        // Construtor para inicializar o carro
-        public Carro(string placa, string modelo, Motor motor)
-        {
-            if (string.IsNullOrEmpty(placa))
-                throw new ArgumentException("A placa é obrigatória.");
-            if (string.IsNullOrEmpty(modelo))
-                throw new ArgumentException("O modelo é obrigatório.");
-            if (motor == null)
-                throw new ArgumentNullException(nameof(motor), "O carro deve ter um motor.");
+        if (MotorInstaladoEmOutroCarro(motor))
+            throw new InvalidOperationException("O motor já está instalado em outro carro.");
 
-            Placa = placa;
-            Modelo = modelo;
-            Motor = motor;
-        }
-
-        // Método para trocar o motor do carro
-        public void TrocarMotor(Motor novoMotor)
-        {
-            if (novoMotor == null)
-                throw new ArgumentNullException(nameof(novoMotor), "O novo motor não pode ser nulo.");
-            if (Motor == novoMotor)
-                throw new InvalidOperationException("O motor já está instalado neste carro.");
-
-            // Verifica se o novo motor já está instalado em outro carro
-            if (MotorInstaladoEmOutroCarro(novoMotor))
-                throw new InvalidOperationException("O motor já está instalado em outro carro.");
-
-            Motor = novoMotor;
-        }
-
-        // Método para calcular a velocidade máxima do carro
-        public double CalcularVelocidadeMaxima()
-        {
-            if (Motor.Cilindrada <= 1.0)
-                return 140;
-            else if (Motor.Cilindrada <= 1.6)
-                return 160;
-            else if (Motor.Cilindrada <= 2.0)
-                return 180;
-            else
-                return 220;
-        }
-
-        // Método para verificar se o motor está instalado em outro carro (simulação)
-        private bool MotorInstaladoEmOutroCarro(Motor motor)
-        {
-            // Aqui você pode implementar a lógica para verificar se o motor está em outro carro
-            // Para simplificar, vamos assumir que não existe essa verificação, pois não temos controle de outros carros neste contexto.
-            return false;
-        }
+        Placa = placa;
+        Modelo = modelo;
+        Motor = motor;
+        motoresInstalados.Add(motor);
     }
 
-    class Program
+    public void TrocarMotor(Motor novoMotor)
     {
-        static void Main(string[] args)
+        if (novoMotor == null)
+            throw new ArgumentNullException(nameof(novoMotor), "O novo motor não pode ser nulo.");
+        if (Motor == novoMotor)
+            throw new InvalidOperationException("O motor já está instalado neste carro.");
+
+        if (MotorInstaladoEmOutroCarro(novoMotor))
+            throw new InvalidOperationException("O motor já está instalado em outro carro.");
+
+        motoresInstalados.Remove(Motor);
+        Motor = novoMotor;
+        motoresInstalados.Add(novoMotor);
+    }
+
+    public double CalcularVelocidadeMaxima()
+    {
+        if (Motor.Cilindrada <= 1.0)
+            return 140;
+        else if (Motor.Cilindrada <= 1.6)
+            return 160;
+        else if (Motor.Cilindrada <= 2.0)
+            return 180;
+        else
+            return 220;
+    }
+
+    private bool MotorInstaladoEmOutroCarro(Motor motor)
+    {
+        return motoresInstalados.Contains(motor);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        try
         {
-            // Criando um motor
-            Motor motor1 = new Motor(1.6);
+            Console.Write("Digite a cilindrada do motor: ");
+            double cilindrada = double.Parse(Console.ReadLine());
+            Motor motor = new Motor(cilindrada);
 
-            // Criando um carro com o motor
-            Carro carro1 = new Carro("ABC-1234", "Fusca", motor1);
+            Console.Write("Digite a placa do carro: ");
+            string placa = Console.ReadLine();
 
-            // Exibindo informações do carro
-            Console.WriteLine($"Carro: {carro1.Modelo}, Placa: {carro1.Placa}");
-            Console.WriteLine($"Cilindrada do Motor: {motor1.Cilindrada}");
-            Console.WriteLine($"Velocidade Máxima: {carro1.CalcularVelocidadeMaxima()} km/h");
+            Console.Write("Digite o modelo do carro: ");
+            string modelo = Console.ReadLine();
 
-            // Criando um novo motor
-            Motor motor2 = new Motor(2.0);
-            carro1.TrocarMotor(motor2);
+            Carro carro = new Carro(placa, modelo, motor);
 
-            Console.WriteLine($"Novo motor instalado.");
-            Console.WriteLine($"Cilindrada do Novo Motor: {motor2.Cilindrada}");
-            Console.WriteLine($"Nova Velocidade Máxima: {carro1.CalcularVelocidadeMaxima()} km/h");
+            Console.WriteLine($"\nCarro: {carro.Modelo}, Placa: {carro.Placa}");
+            Console.WriteLine($"Cilindrada do Motor: {motor.Cilindrada}");
+            Console.WriteLine($"Velocidade Máxima: {carro.CalcularVelocidadeMaxima()} km/h");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro: {ex.Message}");
         }
     }
+}

@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\3-Triangulo\\3-Triangulo.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\3-Triangulo\\3-Triangulo.csproj",
       "projectName": "3-Triangulo",
-      "projectPath": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\3-Triangulo\\3-Triangulo.csproj",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\3-Triangulo\\3-Triangulo.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\3-Triangulo\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\3-Triangulo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,8 +54,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj"
             }
           }
         }

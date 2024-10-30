@@ -1,7 +1,9 @@
-﻿using System;
+﻿//Autor: Matheus Vieira de Souza
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
-//Autor: Matheus Vieira de Souza
+
 namespace Classes
 {
     public class ListaIntervalo
@@ -38,7 +40,7 @@ namespace Classes
 
             Intervalo intervalo1 = new Intervalo(new DateTime(2024, 10, 1, 10, 0, 0), new DateTime(2024, 10, 1, 12, 0, 0));
             Intervalo intervalo2 = new Intervalo(new DateTime(2024, 10, 1, 12, 0, 0), new DateTime(2024, 10, 1, 14, 0, 0));
-            Intervalo intervalo3 = new Intervalo(new DateTime(2024, 10, 1, 11, 0, 0), new DateTime(2024, 10, 1, 13, 0, 0)); // Intersecta com intervalo1
+            Intervalo intervalo3 = new Intervalo(new DateTime(2024, 10, 1, 11, 0, 0), new DateTime(2024, 10, 1, 13, 0, 0));
 
             if (lista.Add(intervalo1))
                 Console.WriteLine("Intervalo 1 adicionado com sucesso.");

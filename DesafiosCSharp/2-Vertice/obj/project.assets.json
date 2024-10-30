@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\2-Vertice\\2-Vertice.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\2-Vertice\\2-Vertice.csproj",
       "projectName": "2-Vertice",
-      "projectPath": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\2-Vertice\\2-Vertice.csproj",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\2-Vertice\\2-Vertice.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\2-Vertice\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\2-Vertice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,8 +54,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj"
             }
           }
         }

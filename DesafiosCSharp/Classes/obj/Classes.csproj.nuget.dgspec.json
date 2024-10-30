@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj": {}
+    "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj": {
+    "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj",
         "projectName": "Classes",
-        "projectPath": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj",
+        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Classes\\Classes.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\projetos\\Residência .NET\\Projects-CSharp\\DesafiosCSharp\\Classes\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Classes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

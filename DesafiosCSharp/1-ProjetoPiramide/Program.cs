@@ -26,27 +26,21 @@ class Piramide
         valida = n;
     }
 
-    // Método que desenha a pirâmide
     public void Desenha()
     {
         for (int i = 1; i <= valida; i++)
         {
-            // Imprime espaços para centralizar a pirâmide
             Console.Write(new string(' ', valida - i));
 
-            // Imprime a primeira metade da linha
             for (int j = 1; j <= i; j++)
             {
                 Console.Write(j);
             }
 
-            // Imprime a segunda metade da linha
             for (int j = i - 1; j >= 1; j--)
             {
                 Console.Write(j);
             }
-
-            // Pula para a próxima linha
             Console.WriteLine();
         }
     }

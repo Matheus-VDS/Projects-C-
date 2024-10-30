@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Autor: Matheus Vieira de Souza
+
+using System;
 
     public static class NumberExtensions
     {
