@@ -28,19 +28,64 @@ public class Agenda
         Console.WriteLine("Paciente excluído com sucesso!");
     }
 
-    public void AgendarConsulta(Consulta consulta)
+    public void AgendarConsulta(string cpf, DateTime dataConsulta, TimeSpan horaInicial, TimeSpan horaFinal)
     {
-        if (!pacientes.Any(p => p.CPF == consulta.CPF))
-            throw new ArgumentException("Erro: Paciente não cadastrado.");
+        // Verifica se o CPF existe no cadastro
+        var paciente = pacientes.Find(p => p.CPF == cpf);
+        if (paciente == null)
+        {
+            throw new Exception("Erro: paciente não cadastrado.");
+        }
 
-        if (consultas.Any(c => c.DataConsulta == consulta.DataConsulta &&
-                               ((consulta.HoraInicial >= c.HoraInicial && consulta.HoraInicial < c.HoraFinal) ||
-                                (consulta.HoraFinal > c.HoraInicial && consulta.HoraFinal <= c.HoraFinal))))
-            throw new InvalidOperationException("Erro: Já existe uma consulta agendada nesse horário.");
+        // Valida a data da consulta no formato DDMMAAAA
+        if (dataConsulta < DateTime.Today ||
+            (dataConsulta == DateTime.Today && horaInicial <= DateTime.Now.TimeOfDay))
+        {
+            throw new Exception("Erro: o agendamento deve ser para um horário futuro.");
+        }
 
-        consultas.Add(consulta);
+        // Verifica se hora final é maior que hora inicial
+        if (horaFinal <= horaInicial)
+        {
+            throw new Exception("Erro: hora final deve ser maior que a hora inicial.");
+        }
+
+        // Verifica se o paciente já tem um agendamento futuro
+        var agendamentoExistente = consultas.Find(c => c.CPF == cpf && c.DataConsulta > DateTime.Today);
+        if (agendamentoExistente != null)
+        {
+            throw new Exception("Erro: o paciente já tem um agendamento futuro.");
+        }
+
+        // Verifica se o agendamento não está sobrepondo outro
+        foreach (var consulta in consultas)
+        {
+            if (consulta.DataConsulta == dataConsulta &&
+                ((horaInicial >= consulta.HoraInicial && horaInicial < consulta.HoraFinal) ||
+                 (horaFinal > consulta.HoraInicial && horaFinal <= consulta.HoraFinal)))
+            {
+                throw new Exception("Erro: o horário está sobrepondo outro agendamento.");
+            }
+        }
+
+        // Verifica se a hora inicial e final são válidas (de 15 em 15 minutos)
+        if (horaInicial.Minutes % 15 != 0 || horaFinal.Minutes % 15 != 0)
+        {
+            throw new Exception("Erro: a hora deve ser múltiplo de 15 minutos.");
+        }
+
+        // Verifica se o horário de agendamento está dentro do horário de funcionamento
+        if (horaInicial < new TimeSpan(8, 0, 0) || horaFinal > new TimeSpan(19, 0, 0))
+        {
+            throw new Exception("Erro: o horário de agendamento deve estar entre 08:00 e 19:00.");
+        }
+
+        // Agendamento válido, cria uma nova consulta
+        var novaConsulta = new Consulta(cpf, dataConsulta, horaInicial, horaFinal);
+        consultas.Add(novaConsulta);
         Console.WriteLine("Agendamento realizado com sucesso!");
     }
+
 
     public void ListarPacientes(bool ordenarPorCPF = true)
     {

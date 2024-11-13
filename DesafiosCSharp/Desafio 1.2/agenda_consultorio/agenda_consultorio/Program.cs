@@ -27,7 +27,7 @@ public class Program
                     MenuAgenda(agenda);
                     break;
                 case 3:
-                    Console.WriteLine("Encerrando...");
+                    Console.WriteLine("Fim de programa");
                     break;
                 default:
                     Console.WriteLine("Opção inválida.");
@@ -135,9 +135,7 @@ public class Program
                         TimeSpan horaInicial = TimeSpan.ParseExact(Console.ReadLine(), "hhmm", CultureInfo.InvariantCulture);
                         Console.Write("Hora final (HHmm): ");
                         TimeSpan horaFinal = TimeSpan.ParseExact(Console.ReadLine(), "hhmm", CultureInfo.InvariantCulture);
-
-                        var consulta = new Consulta(cpf, dataConsulta, horaInicial, horaFinal);
-                        agenda.AgendarConsulta(consulta);
+                        agenda.AgendarConsulta(cpf, dataConsulta, horaInicial, horaFinal);
                     }
                     catch (Exception ex)
                     {
@@ -192,4 +190,5 @@ public class Program
             Console.ReadKey();
         } while (opcaoAgenda != 4);
     }
+
 }
