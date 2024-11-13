@@ -1,21 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace agenda_consultorio.Classes
+public class Consulta
 {
-    internal class Consulta
+    public string CPF { get; private set; }
+    public DateTime DataConsulta { get; private set; }
+    public TimeSpan HoraInicial { get; private set; }
+    public TimeSpan HoraFinal { get; private set; }
+
+    public Consulta(string cpf, DateTime dataConsulta, TimeSpan horaInicial, TimeSpan horaFinal)
     {
-        public DateOnly dataConsulta { get; set; }
-        public DateTime horaInicial { get; set; }
-        public DateTime horaFinal { get; set; }
+        if (horaInicial < TimeSpan.FromHours(8) || horaFinal > TimeSpan.FromHours(19))
+            throw new ArgumentException("Erro: O horário de consulta deve estar entre 08:00 e 19:00.");
+        if (horaInicial >= horaFinal)
+            throw new ArgumentException("Erro: Hora final deve ser maior que hora inicial.");
 
-        Consulta() { }
-
-       public void agendarConsulta(int CPF, DateOnly dataConsulta, DateTime horaInicial, DateTime horaFinal) { }
-       public void cancelarConsulta(int CPF, DateOnly dataConsulta, DateTime horaInicial, DateTime horaFinal) { }
-       public void listarAgenda() { }
+        CPF = cpf;
+        DataConsulta = dataConsulta;
+        HoraInicial = horaInicial;
+        HoraFinal = horaFinal;
     }
 }

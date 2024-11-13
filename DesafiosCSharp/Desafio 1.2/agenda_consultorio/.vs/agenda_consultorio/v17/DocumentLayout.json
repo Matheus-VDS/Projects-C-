@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Desafio 1.2\\agenda_consultorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EAA1DED5-2C8A-486E-BB3B-9BF4776E7C7C}|agenda_consultorio\\agenda_consultorio.csproj|c:\\users\\pc\\documents\\github\\projects-csharp\\desafioscsharp\\desafio 1.2\\agenda_consultorio\\agenda_consultorio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAA1DED5-2C8A-486E-BB3B-9BF4776E7C7C}|agenda_consultorio\\agenda_consultorio.csproj|solutionrelative:agenda_consultorio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAA1DED5-2C8A-486E-BB3B-9BF4776E7C7C}|agenda_consultorio\\agenda_consultorio.csproj|c:\\users\\pc\\documents\\github\\projects-csharp\\desafioscsharp\\desafio 1.2\\agenda_consultorio\\agenda_consultorio\\classes\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA1DED5-2C8A-486E-BB3B-9BF4776E7C7C}|agenda_consultorio\\agenda_consultorio.csproj|solutionrelative:agenda_consultorio\\classes\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EAA1DED5-2C8A-486E-BB3B-9BF4776E7C7C}|agenda_consultorio\\agenda_consultorio.csproj|c:\\users\\pc\\documents\\github\\projects-csharp\\desafioscsharp\\desafio 1.2\\agenda_consultorio\\agenda_consultorio\\classes\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAA1DED5-2C8A-486E-BB3B-9BF4776E7C7C}|agenda_consultorio\\agenda_consultorio.csproj|solutionrelative:agenda_consultorio\\classes\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAA1DED5-2C8A-486E-BB3B-9BF4776E7C7C}|agenda_consultorio\\agenda_consultorio.csproj|c:\\users\\pc\\documents\\github\\projects-csharp\\desafioscsharp\\desafio 1.2\\agenda_consultorio\\agenda_consultorio\\classes\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAA1DED5-2C8A-486E-BB3B-9BF4776E7C7C}|agenda_consultorio\\agenda_consultorio.csproj|solutionrelative:agenda_consultorio\\classes\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAA1DED5-2C8A-486E-BB3B-9BF4776E7C7C}|agenda_consultorio\\agenda_consultorio.csproj|c:\\users\\pc\\documents\\github\\projects-csharp\\desafioscsharp\\desafio 1.2\\agenda_consultorio\\agenda_consultorio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA1DED5-2C8A-486E-BB3B-9BF4776E7C7C}|agenda_consultorio\\agenda_consultorio.csproj|solutionrelative:agenda_consultorio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,15 +30,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Consulta.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Desafio 1.2\\agenda_consultorio\\agenda_consultorio\\Classes\\Consulta.cs",
               "RelativeDocumentMoniker": "agenda_consultorio\\Classes\\Consulta.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Desafio 1.2\\agenda_consultorio\\agenda_consultorio\\Classes\\Consulta.cs",
               "RelativeToolTip": "agenda_consultorio\\Classes\\Consulta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:19:23.342Z"
+              "WhenOpened": "2024-11-06T22:19:23.342Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -50,17 +51,18 @@
               "RelativeToolTip": "agenda_consultorio\\Classes\\Paciente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:13:30.087Z"
+              "WhenOpened": "2024-11-06T22:13:30.087Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Desafio 1.2\\agenda_consultorio\\agenda_consultorio\\Program.cs",
               "RelativeDocumentMoniker": "agenda_consultorio\\Program.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\Projects-CSharp\\DesafiosCSharp\\Desafio 1.2\\agenda_consultorio\\agenda_consultorio\\Program.cs",
               "RelativeToolTip": "agenda_consultorio\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBcAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T22:10:30.814Z",
               "EditorCaption": ""

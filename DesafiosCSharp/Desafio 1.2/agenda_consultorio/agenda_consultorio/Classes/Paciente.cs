@@ -1,23 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace agenda_consultorio.Classes
+public class Paciente
 {
-    internal class Paciente
+    public string CPF { get; private set; }
+    public string Nome { get; private set; }
+    public DateTime DataNascimento { get; private set; }
+
+    public int Idade => DateTime.Now.Year - DataNascimento.Year;
+
+    public Paciente(string cpf, string nome, DateTime dataNascimento)
     {
-        public int CPF { get; set; }
-        public string nome { get; set; }
-        public DateOnly dataNascimento { get; set; }
-        public int idade { get; set; }
+        if (!ValidarCPF(cpf)) throw new ArgumentException("Erro: CPF inválido.");
+        if (nome.Length < 5) throw new ArgumentException("Erro: Nome deve ter pelo menos 5 caracteres.");
+        if (Idade < 13) throw new ArgumentException("Erro: Paciente deve ter pelo menos 13 anos.");
 
-        Paciente() { }
+        CPF = cpf;
+        Nome = nome;
+        DataNascimento = dataNascimento;
+    }
 
-        public void cadastrarPaciente(int CPF, string nome, DateOnly dataNascimento) { }
-        public void excluirPaciente(int CPF) { }
-        public void listarPacientesCPF() { }
-
+    private bool ValidarCPF(string cpf)
+    {
+        // Lógica de validação de CPF
+        return true; // Retorne true para CPF válido, e false caso contrário
     }
 }

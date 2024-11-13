@@ -1,97 +1,195 @@
-﻿class Program
-{
-    static void Main(string[] args) {
+﻿using System;
+using System.Globalization;
 
-        int op_menu;
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        var agenda = new Agenda();
+        int opcaoMenuPrincipal;
 
         do
         {
+            Console.Clear();
             Console.WriteLine("Menu Principal");
-            Console.WriteLine("1 - Cadastrar novo paciente");
-            Console.WriteLine("2 - Agenda");
-            Console.WriteLine("3 - Fim");
+            Console.WriteLine("1-Cadastro de pacientes");
+            Console.WriteLine("2-Agenda");
+            Console.WriteLine("3-Fim");
+            Console.Write("Escolha uma opção: ");
+            opcaoMenuPrincipal = int.Parse(Console.ReadLine());
 
-            op_menu = int.Parse(Console.ReadLine());
-
-            switch (op_menu)
+            switch (opcaoMenuPrincipal)
             {
                 case 1:
-                    Console.WriteLine("Menu do Cadastro de Pacientes");
-                    Console.WriteLine("1 - Cadastrar novo paciente");
-                    Console.WriteLine("2 - Excluir paciente");
-                    Console.WriteLine("3 - Listar pacientes (ordenado por CPF)");
-                    Console.WriteLine("4 - Listar pacientes (ordenado por nome)");
-                    Console.WriteLine("5 - Voltar p/ menu principal");
+                    MenuCadastroPacientes(agenda);
+                    break;
+                case 2:
+                    MenuAgenda(agenda);
+                    break;
+                case 3:
+                    Console.WriteLine("Encerrando...");
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida.");
+                    break;
+            }
+        } while (opcaoMenuPrincipal != 3);
+    }
 
-                    int op_cadastro = int.Parse(Console.ReadLine());
+    private static void MenuCadastroPacientes(Agenda agenda)
+    {
+        int opcaoCadastro;
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("Menu de Cadastro de Pacientes");
+            Console.WriteLine("1-Cadastrar novo paciente");
+            Console.WriteLine("2-Excluir paciente");
+            Console.WriteLine("3-Listar pacientes (ordenado por CPF)");
+            Console.WriteLine("4-Listar pacientes (ordenado por nome)");
+            Console.WriteLine("5-Voltar p/ menu principal");
+            Console.Write("Escolha uma opção: ");
+            opcaoCadastro = int.Parse(Console.ReadLine());
 
-                    switch (op_cadastro)
+            switch (opcaoCadastro)
+            {
+                case 1:
+                    // Cadastro de paciente
+                    try
                     {
-                        case 1:
-                            Console.WriteLine("Digite o CPF do paciente: ");
-                            string cpf = Console.ReadLine();
-                            Console.WriteLine("Digite o nome do paciente: ");
-                            string nome = Console.ReadLine();
-                            Console.WriteLine("Digite a data de nascimento do paciente: ");
-                            DateOnly dataNascimento = DateOnly.Parse(Console.ReadLine());
-                            Console.WriteLine("Digite a idade do paciente: ");
-                            int idade = int.Parse(Console.ReadLine());
-                            break;
-                        case 2:
-                            Console.WriteLine("Digite o CPF do paciente que deseja excluir: ");
-                            cpf = Console.ReadLine();
-                            break;
-                        case 3:
-                            Console.WriteLine("Listagem de pacientes ordenados por CPF");
-                            break;
-                        case 4:
-                            Console.WriteLine("Listagem de pacientes ordenados por nome");
-                            break;
-                        case 5:
-                            Console.WriteLine("Voltando para o menu principal");
-                            break;
-                        default:
-                            Console.WriteLine("Opção inválida, voltando para o menu principal");
-                            break;
+                        Console.Write("CPF: ");
+                        string cpf = Console.ReadLine();
+                        Console.Write("Nome: ");
+                        string nome = Console.ReadLine();
+                        Console.Write("Data de nascimento (dd/MM/yyyy): ");
+                        DateTime dataNascimento = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
+
+                        var novoPaciente = new Paciente(cpf, nome, dataNascimento);
+                        agenda.AdicionarPaciente(novoPaciente);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
                     }
                     break;
 
                 case 2:
-                    Console.WriteLine("Agenda");
-                    Console.WriteLine("1 - Marcar consulta");
-                    Console.WriteLine("2 - Cancelar agendamento");
-                    Console.WriteLine("3 - Listar agenda");
-                    Console.WriteLine("4 - Voltar p/ menu principal");
-
-                    int op_agenda = int.Parse(Console.ReadLine());
-
-                    switch (op_agenda)
+                    // Exclusão de paciente
+                    try
                     {
-                        case 1:
-                            break;
-                        case 2:
-                            break;
-                        case 3:
-                            break;
-                        case 4:
-                            Console.WriteLine("Voltando para o menu principal");
-                            break;
-                        default:
-                            Console.WriteLine("Opção inválida, voltando para o menu principal");
-                            break;
+                        Console.Write("CPF do paciente a excluir: ");
+                        string cpf = Console.ReadLine();
+                        agenda.RemoverPaciente(cpf);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
                     }
                     break;
 
                 case 3:
-                    Console.WriteLine("Fim do programa");
+                    agenda.ListarPacientes(true); // Ordenado por CPF
+                    break;
+
+                case 4:
+                    agenda.ListarPacientes(false); // Ordenado por nome
+                    break;
+
+                case 5:
                     break;
 
                 default:
-                    Console.WriteLine("Opção inválida. Tente novamente.");
+                    Console.WriteLine("Opção inválida.");
                     break;
             }
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
+        } while (opcaoCadastro != 5);
+    }
 
-        } while (op_menu != 3);
+    private static void MenuAgenda(Agenda agenda)
+    {
+        int opcaoAgenda;
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("Menu da Agenda");
+            Console.WriteLine("1-Agendar consulta");
+            Console.WriteLine("2-Cancelar agendamento");
+            Console.WriteLine("3-Listar agenda");
+            Console.WriteLine("4-Voltar p/ menu principal");
+            Console.Write("Escolha uma opção: ");
+            opcaoAgenda = int.Parse(Console.ReadLine());
 
+            switch (opcaoAgenda)
+            {
+                case 1:
+                    // Agendamento de consulta
+                    try
+                    {
+                        Console.Write("CPF do paciente: ");
+                        string cpf = Console.ReadLine();
+                        Console.Write("Data da consulta (dd/MM/yyyy): ");
+                        DateTime dataConsulta = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                        Console.Write("Hora inicial (HHmm): ");
+                        TimeSpan horaInicial = TimeSpan.ParseExact(Console.ReadLine(), "hhmm", CultureInfo.InvariantCulture);
+                        Console.Write("Hora final (HHmm): ");
+                        TimeSpan horaFinal = TimeSpan.ParseExact(Console.ReadLine(), "hhmm", CultureInfo.InvariantCulture);
+
+                        var consulta = new Consulta(cpf, dataConsulta, horaInicial, horaFinal);
+                        agenda.AgendarConsulta(consulta);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                    break;
+
+                case 2:
+                    // Cancelamento de agendamento
+                    try
+                    {
+                        Console.Write("CPF do paciente: ");
+                        string cpf = Console.ReadLine();
+                        Console.Write("Data da consulta (dd/MM/yyyy): ");
+                        DateTime dataConsulta = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                        Console.Write("Hora inicial da consulta (HHmm): ");
+                        TimeSpan horaInicial = TimeSpan.ParseExact(Console.ReadLine(), "hhmm", CultureInfo.InvariantCulture);
+
+                        agenda.CancelarAgendamento(cpf, dataConsulta, horaInicial);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                    break;
+
+                case 3:
+                    Console.Write("Apresentar a agenda T-Toda ou P-Periodo (T/P): ");
+                    string tipo = Console.ReadLine();
+                    if (tipo.ToUpper() == "P")
+                    {
+                        Console.Write("Data inicial (dd/MM/yyyy): ");
+                        DateTime dataInicial = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                        Console.Write("Data final (dd/MM/yyyy): ");
+                        DateTime dataFinal = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                        agenda.ListarAgenda(dataInicial, dataFinal);
+                    }
+                    else
+                    {
+                        agenda.ListarAgenda();
+                    }
+                    break;
+
+                case 4:
+                    break;
+
+                default:
+                    Console.WriteLine("Opção inválida.");
+                    break;
+            }
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
+        } while (opcaoAgenda != 4);
     }
 }
