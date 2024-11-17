@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "api-conversaomoedas/1.0.0": {
+        "runtime": {
+          "api-conversaomoedas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "api-conversaomoedas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

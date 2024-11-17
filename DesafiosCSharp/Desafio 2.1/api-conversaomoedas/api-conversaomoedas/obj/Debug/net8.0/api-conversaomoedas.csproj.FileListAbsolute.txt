@@ -1,0 +1,15 @@
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\obj\Debug\net8.0\api-conversaomoedas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\obj\Debug\net8.0\api-conversaomoedas.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\obj\Debug\net8.0\api-conversaomoedas.AssemblyInfo.cs
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\obj\Debug\net8.0\api-conversaomoedas.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\obj\Debug\net8.0\api-conversaomoedas.sourcelink.json
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\bin\Debug\net8.0\api-conversaomoedas.exe
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\bin\Debug\net8.0\api-conversaomoedas.deps.json
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\bin\Debug\net8.0\api-conversaomoedas.runtimeconfig.json
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\bin\Debug\net8.0\api-conversaomoedas.dll
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\bin\Debug\net8.0\api-conversaomoedas.pdb
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\obj\Debug\net8.0\api-conversaomoedas.dll
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\obj\Debug\net8.0\refint\api-conversaomoedas.dll
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\obj\Debug\net8.0\api-conversaomoedas.pdb
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\obj\Debug\net8.0\api-conversaomoedas.genruntimeconfig.cache
+C:\Users\PC\Documents\GitHub\Projects-CSharp\DesafiosCSharp\Desafio 2.1\api-conversaomoedas\api-conversaomoedas\obj\Debug\net8.0\ref\api-conversaomoedas.dll
