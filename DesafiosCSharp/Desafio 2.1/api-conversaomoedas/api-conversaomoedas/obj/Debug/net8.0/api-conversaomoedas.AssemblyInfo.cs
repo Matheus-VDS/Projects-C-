@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("api-conversaomoedas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+851ab504869a9ffd9663f484c1c6a41b13f760bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+accc88ee7b0e597e570aed841f8459859fcb01f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("api-conversaomoedas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("api-conversaomoedas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

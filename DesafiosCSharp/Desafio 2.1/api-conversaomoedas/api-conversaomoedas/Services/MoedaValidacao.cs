@@ -8,14 +8,14 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace api_conversaomoedas.Services
 {
-    class CoinErrorValidation
+    class MoedaValidacao
     {
         public string MoedaOrigem { get; set; }
         public string MoedaDestino { get; set; }
         public decimal valor { get; set; }
         public decimal taxa { get; set; }
         bool valida { get; set; }
-        public CoinErrorValidation() { }
+        public MoedaValidacao() { }
 
         public bool MoedaIgual(string MoedaOrigem, string MoedaDestino)
         {

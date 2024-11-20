@@ -8,10 +8,10 @@ namespace api_conversaomoedas.Services
         static async Task Main(string[] args)
         {
             string moedaOrigem="";
-            string moedaDestino="";
-            decimal valor, novo_valor, taxa=9;
+            string moedaDestino;
+            decimal valor, novo_valor, taxa;
             bool valida = false;
-            CoinErrorValidation Error = new CoinErrorValidation();  
+            MoedaValidacao Error = new MoedaValidacao();  
             Console.WriteLine("============ Conversão de moedas ============");
             do
             {
@@ -47,7 +47,7 @@ namespace api_conversaomoedas.Services
                 {
                     Console.WriteLine($"Erro: {ex.Message}");
                 }
-            } while (!string.IsNullOrEmpty(moedaOrigem));
+            } while (!string.IsNullOrWhiteSpace(moedaOrigem));
         }
     }
 }
