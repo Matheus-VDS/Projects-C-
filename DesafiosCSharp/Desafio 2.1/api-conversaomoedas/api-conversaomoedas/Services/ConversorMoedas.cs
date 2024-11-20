@@ -2,8 +2,9 @@
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
+using static System.Net.WebRequestMethods;
 
-namespace ConversorMoedas
+namespace api_conversaomoedas.Services
 {
     public class ConversorService
     {
@@ -14,21 +15,38 @@ namespace ConversorMoedas
         {
             using (var client = new HttpClient())
             {
-                string url = $"{BASE_URL}/{API_KEY}/pair/{moedaOrigem}/{moedaDestino}/{valor}";
-                var response = await client.GetAsync(url);
-
-                if (!response.IsSuccessStatusCode)
+                try
                 {
-                    throw new Exception("Erro ao acessar a API");
+                    string url = $"{BASE_URL}/{API_KEY}/pair/{moedaOrigem}/{moedaDestino}/{valor}";
+                    var response = await client.GetAsync(url);
+
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        throw new Exception("Erro ao acessar a API");
+                    }
+
+                    var content = await response.Content.ReadAsStringAsync();
+                    var options = new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    };
+
+                    var resultado = JsonSerializer.Deserialize<ExchangeRateResponse>(content, options);
+
+                    if (resultado == null)
+                    {
+                        throw new Exception("Erro ao deserializar a resposta da API.");
+                    }
+                    return resultado;
                 }
-
-                var content = await response.Content.ReadAsStringAsync();
-                var options = new JsonSerializerOptions
+                catch (HttpRequestException httpEx)
                 {
-                    PropertyNameCaseInsensitive = true
-                };
-
-                return JsonSerializer.Deserialize<ExchangeRateResponse>(content, options);
+                    throw new Exception($"{httpEx.Message}", httpEx);
+                }
+                catch (JsonException jsonEx)
+                {
+                    throw new Exception($"{jsonEx.Message}");
+                }   
             }
         }
     }

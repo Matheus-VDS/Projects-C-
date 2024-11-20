@@ -1,4 +1,4 @@
-﻿using ConversorMoedas;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,51 +8,64 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace api_conversaomoedas.Services
 {
-    class ErrorValidation
+    class CoinErrorValidation
     {
         public string MoedaOrigem { get; set; }
         public string MoedaDestino { get; set; }
-        public double valor { get; set; }
-
-
+        public decimal valor { get; set; }
+        public decimal taxa { get; set; }
+        bool valida { get; set; }
+        public CoinErrorValidation() { }
 
         public bool MoedaIgual(string MoedaOrigem, string MoedaDestino)
         {
             if (MoedaOrigem.Equals(MoedaDestino) == true)
             {
                 Console.WriteLine("Moedas iguais, digite novamente");
-                return false;
+                return true;
             }
-            return true;
+            return false;
         }
-        public bool VaziaMoeda(string MoedaOrigem)
+        public void TerminaPrograma(string MoedaOrigem)
         {
-            if (string.IsNullOrEmpty(MoedaOrigem))
+            if (string.IsNullOrWhiteSpace(MoedaOrigem))
             {
-                Console.WriteLine("Moeda vazia, fim do programa");
-                return false;
+                Console.WriteLine("Moeda de origem vazia, fim do programa");
+                Environment.Exit(0);
             }
-            return true;
         }
 
-        public bool MoedaZero(double valor)
+        public decimal MoedaNegativa(bool valida, decimal valor)
         {
-            if (valor < 0.0)
-            {
-                Console.WriteLine("Valor menor que zero, digite o valor novamente");
-                return false;
+            while (valida == false) {  
+                if (valor <= 0)
+                {
+                    Console.WriteLine("Valor menor ou igual a zero, digite o valor novamente:");
+                    valor = decimal.Parse(Console.ReadLine());
+                }
+                else
+                    valida = true;
             }
-            return true;
+            return valor;
         }
 
         public bool MoedaTamanho(string MoedaOrigem, string MoedaDestino)
         {
-            if (MoedaOrigem.Length != 3)
+            if ((MoedaOrigem.Length | MoedaDestino.Length) != 3)
             {
-                Console.WriteLine("Moeda de origem inválida, digite novamente");
-                return false;
+                Console.WriteLine("Moeda de origem e destino devem conter 3 caracteres, digite novamente");
+                return true;
             }
-            return true;
+            return false;
+        }
+        public decimal MoedaArredondamento(decimal valor)
+        {
+            return Math.Round(valor, 2);
+        }
+
+        public void ApresentacaoTaxa(decimal taxa)
+        {
+            Console.WriteLine();
         }
     }
 }

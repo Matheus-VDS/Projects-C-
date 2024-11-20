@@ -1,4 +1,4 @@
-﻿namespace ConversorMoedas
+﻿namespace api_conversaomoedas.Services
 {
     public class ExchangeRateResponse
     {

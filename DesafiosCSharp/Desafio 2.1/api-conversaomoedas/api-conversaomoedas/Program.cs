@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace ConversorMoedas
+namespace api_conversaomoedas.Services
 {
     class Program
     {
@@ -9,32 +9,39 @@ namespace ConversorMoedas
         {
             string moedaOrigem="";
             string moedaDestino="";
-            decimal valor;
+            decimal valor, novo_valor, taxa=9;
+            bool valida = false;
+            CoinErrorValidation Error = new CoinErrorValidation();  
+            Console.WriteLine("============ Conversão de moedas ============");
             do
             {
                 try
                 {
-                    Console.WriteLine("============ Conversão de moedas ============");
-                    Console.Write("Digite a moeda de origem (ex: USD, BRL, EUR): ");
+                    Console.Write("Digite a moeda de origem (ex: USD, BRL, EUR, AUD, BGN, CAD, CHF, CNY, EGP, GBP): ");
                     moedaOrigem = Console.ReadLine()?.ToUpper();
+                    Error.TerminaPrograma(moedaOrigem);
 
-                    /*if (string.IsNullOrEmpty(moedaOrigem))
-                    {
-                        Console.WriteLine("Valor vazio, fim do programa");
-                        Environment.Exit(0);  
-                    }*/
-
-                    Console.Write("Digite a moeda de destino (ex: USD, BRL, EUR): ");
+                    Console.Write("Digite a moeda de destino (ex: USD, BRL, EUR, AUD, BGN, CAD, CHF, CNY, EGP, GBP): ");
                     moedaDestino = Console.ReadLine()?.ToUpper();
+                    if (Error.MoedaIgual(moedaOrigem, moedaDestino) == true)
+                        continue;
+                    if (Error.MoedaTamanho(moedaOrigem, moedaDestino) == true)
+                        continue;
 
                     Console.Write("Digite o valor a ser convertido: ");
                     valor = decimal.Parse(Console.ReadLine());
+                    if (valor <= 0)
+                    {
+                        novo_valor = Error.MoedaNegativa(valida, valor);
+                        valor = novo_valor;
+                    }
 
                     var resultado = await ConversorService.RealizarConversao(moedaOrigem, moedaDestino, valor);
 
                     decimal valorConvertido = resultado.conversion_result;
+                    taxa = resultado.conversion_rate;
 
-                    Console.WriteLine($"\nValor convertido: {valorConvertido:F2} {moedaDestino}");
+                    Console.WriteLine($"\nValor convertido de {moedaOrigem} para {moedaDestino}: {valorConvertido:F2} {moedaDestino}\nTaxa de conversão: {taxa:F6}");
                 }
                 catch (Exception ex)
                 {
